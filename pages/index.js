@@ -2,14 +2,13 @@ import { PostCard, Categories, PostWidget } from '../components/index.js'
 import {getPosts} from '../services'
 import { FeaturedPosts } from '../sections'
 
-// next js specialty: https://nextjs.org/learn/basics/data-fetching/implement-getstaticprops
-
 export default function Home({ postData }) {
   return (
-    <div className='container mx-auto px-10 mb-8'>
+    <div className='container h-4/6 mx-auto px-10 mb-8'>
 
       <FeaturedPosts />
-      <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
+
+      {/* <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
         <div className='lg:col-span-8 col-span-1'>
           {postData.map((post, index) => (
             <PostCard post={post.node} key={index} />))}
@@ -21,7 +20,7 @@ export default function Home({ postData }) {
             <Categories />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

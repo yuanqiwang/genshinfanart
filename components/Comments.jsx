@@ -6,7 +6,7 @@ import { getComments } from '../services';
 
 const Comments = ({ slug }) => {
   const [comments, setComments] = useState([]);
-
+  console.log(comments)
   useEffect(() => {
     getComments(slug).then((result) => {
       setComments(result);
@@ -32,6 +32,8 @@ const Comments = ({ slug }) => {
                   {moment(comment.createdAt).format('MMM DD, YYYY')}
                 </p>
                 <p className="whitespace-pre-line text-gray-600 w-full">{parse(comment.comment)}</p>
+                <img className="rounded-lg w-auto h-32 hover:h-48" src={comment.photo.url}/>
+
               </div>
             ))}
         </div>

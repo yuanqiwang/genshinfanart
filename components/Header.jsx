@@ -16,8 +16,8 @@ const Header = () => {
       <div className='border-b w-full inline-block border-gray-400 py-8'>
         <div className='md:float-left block'>
           <Link href='/'>
-            <span className='cursor-pointer font-bold text-4xl text-white'>
-              元神
+            <span className='cursor-pointer font-bold text-3xl text-white'>
+              Genshin Impact Fan Art
             </span>
           </Link>
           <div className="hidden md:float-left md:contents">

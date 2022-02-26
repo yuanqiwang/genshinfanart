@@ -248,6 +248,9 @@ export const getComments = async (slug) => {
         name
         createdAt
         comment
+        photo {
+          url
+        }
       }
     }
   `;
