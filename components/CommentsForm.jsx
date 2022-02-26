@@ -20,7 +20,7 @@ const CommentsForm = ({ slug }) => {
   }, []);
 
   const uploadImage = async (e) => {
-    console.log('clicked')
+    // console.log('clicked')
     const file = e.target.files
     const data = new FormData()
     data.append('file', file[0])
@@ -67,7 +67,7 @@ const CommentsForm = ({ slug }) => {
       photos,
       slug,
     };
-    console.log(commentObj)
+    // console.log(commentObj)
     if (storeData) {
       localStorage.setItem('name', name);
       localStorage.setItem('email', email);
